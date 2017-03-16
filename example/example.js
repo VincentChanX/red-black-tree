@@ -1,15 +1,5 @@
-# red-black-tree
-Red Black Tree implementation in nodejs.[Here](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree) is the definition of Red Black Tree.
+var RedBlackTree = require('../index')
 
-#Install
-
-```
-npm install red-black-tree
-```
-
-#Usage
-```javascript
-var RedBlackTree = require('red-black-tree');
 
 //example 1
 var tree = new RedBlackTree()
@@ -54,4 +44,4 @@ console.log(tree.getMinValue()) //return 1
 //get the max value in tree
 console.log(tree.getMaxValue()) //return 10
 
-```
+console.log(tree.inorderTraversal()) //return [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
