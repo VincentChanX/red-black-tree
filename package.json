@@ -1,5 +1,5 @@
 {
-  "name": "red-black-tree",
+  "name": "redblacktree",
   "version": "0.1.0",
   "description": "red black tree implementation in nodejs",
   "main": "index.js",

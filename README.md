@@ -4,12 +4,12 @@ Red Black Tree implementation in nodejs.[Here](https://en.wikipedia.org/wiki/Red
 #Install
 
 ```
-npm install red-black-tree
+npm install redblacktree
 ```
 
 #Usage
 ```javascript
-var RedBlackTree = require('red-black-tree');
+var RedBlackTree = require('redblacktree');
 
 //example 1
 var tree = new RedBlackTree()
