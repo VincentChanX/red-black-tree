@@ -44,4 +44,5 @@ console.log(tree.getMinValue()) //return 1
 //get the max value in tree
 console.log(tree.getMaxValue()) //return 10
 
-console.log(tree.inorderTraversal()) //return [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+//get the inorder sequence
+console.log(tree.getInOrderSequence()) //return [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]

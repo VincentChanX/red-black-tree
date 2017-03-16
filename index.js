@@ -6,8 +6,6 @@ const COLOR_BLACK = 2
 const LEFT_CHILD = 1
 const RIGHT_CHILD = 2
 
-var os = require('os')
-
 function TreeNode(value, color) {
     if (!color) {
         color = COLOR_RED
@@ -487,10 +485,10 @@ RedBlackTree.prototype.insertIntoTree = function(node, value) {
     return newNode
 }
 
-RedBlackTree.prototype.inorderTraversal = function(node) {
+RedBlackTree.prototype.getInOrderSequence = function(node) {
     if (!node) {
         if (this.root) {
-            return this.inorderTraversal(this.root)
+            return this.getInOrderSequence(this.root)
         } else {
             return []
         }
@@ -499,10 +497,10 @@ RedBlackTree.prototype.inorderTraversal = function(node) {
     var leftArr = []
     var rightArr = []
     if (node.hasLeftChild()) {
-        leftArr = this.inorderTraversal(node.getLeftChild())
+        leftArr = this.getInOrderSequence(node.getLeftChild())
     }
     if (node.hasRightChild()) {
-        rightArr = this.inorderTraversal(node.getRightChild())
+        rightArr = this.getInOrderSequence(node.getRightChild())
     }
     return leftArr.concat([node.getValue()], rightArr)
 }
