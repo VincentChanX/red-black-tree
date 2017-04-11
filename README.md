@@ -1,13 +1,13 @@
 # red-black-tree
 Red Black Tree implementation in nodejs.[Here](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree) is the definition of Red Black Tree.
 
-#Install
+# Install
 
 ```
 npm install redblacktree
 ```
 
-#Usage
+# Usage
 ```javascript
 var RedBlackTree = require('redblacktree');
 
